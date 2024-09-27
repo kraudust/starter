@@ -7,5 +7,23 @@ return {
       {"<leader><space>", "<cmd>Telescope find_files hidden=true<cr>", desc = "Find files in root dir"},
       {"<leader>fg", "<cmd>Telescope git_files show_untracked=true<cr> ", desc = "Find git files in repo without submodules"},
     },
+    pickers = {
+      live_grep = {
+          additional_args = function(_)
+              return { "--hidden" }
+          end
+      },
+    }
+    -- defaults = {
+    --   vimgrep_arguments = {
+    --     "rg",
+    --     "--color=never",
+    --     "--no-heading",
+    --     "--with-filename",
+    --     "--line-number",
+    --     "--column",
+    --     "--hidden",
+    --     "--smart-case",
+    -- },
   },
 }
