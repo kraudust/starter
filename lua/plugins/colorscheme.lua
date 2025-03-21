@@ -1,12 +1,11 @@
 return {
-  -- add sonokai
-  { "sainnhe/sonokai" },
+{ "Mofiqul/vscode.nvim" },
 
-  -- Configure LazyVim to load gruvbox
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "sonokai",
-    },
+-- Configure LazyVim to load colorscheme
+{
+  "LazyVim/LazyVim",
+  opts = {
+    colorscheme = "vscode",
   },
+},
 }
