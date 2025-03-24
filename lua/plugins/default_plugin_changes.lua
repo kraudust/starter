@@ -5,8 +5,7 @@ return {
     opts = {
       winopts = {
         preview = {
-          layout = "flex", -- flex means that it will switch based on vertical or horizontal monitor
-          flip_columns = 120, -- I think this is the flip criteria
+          layout = "vertical" -- preview below the search window
         }
       }
     }
